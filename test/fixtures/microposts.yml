@@ -2,8 +2,8 @@
 
 one:
   Content: MyText
-  User_id: 1
+  User: 1
 
 two:
   Content: MyText
-  User_id: 1
+  User: 1

@@ -17,7 +17,7 @@ class MicropostsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create micropost" do
     assert_difference('Micropost.count') do
-      post microposts_url, params: { micropost: { Content: @micropost.Content, User_id: @micropost.User_id } }
+      post microposts_url, params: { micropost: { Content: @micropost.Content, User: @micropost.User } }
     end
 
     assert_redirected_to micropost_url(Micropost.last)
@@ -34,7 +34,7 @@ class MicropostsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update micropost" do
-    patch micropost_url(@micropost), params: { micropost: { Content: @micropost.Content, User_id: @micropost.User_id } }
+    patch micropost_url(@micropost), params: { micropost: { Content: @micropost.Content, User: @micropost.User } }
     assert_redirected_to micropost_url(@micropost)
   end
 

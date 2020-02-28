@@ -10,6 +10,16 @@
   <%= @user.Email %>
 </p>
 
+<p>
+	<strong>Micropost content</strong>
+	<%= @micropost.Content %>
+</p>
+
+<p>
+	<strong>Micropost User_id</strong>
+	<%= @micropost.User %>
+</p>
+
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

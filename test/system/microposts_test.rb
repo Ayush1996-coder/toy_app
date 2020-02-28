@@ -15,7 +15,7 @@ class MicropostsTest < ApplicationSystemTestCase
     click_on "New Micropost"
 
     fill_in "Content", with: @micropost.Content
-    fill_in "User", with: @micropost.User_id
+    fill_in "User", with: @micropost.User
     click_on "Create Micropost"
 
     assert_text "Micropost was successfully created"
@@ -27,7 +27,7 @@ class MicropostsTest < ApplicationSystemTestCase
     click_on "Edit", match: :first
 
     fill_in "Content", with: @micropost.Content
-    fill_in "User", with: @micropost.User_id
+    fill_in "User", with: @micropost.User
     click_on "Update Micropost"
 
     assert_text "Micropost was successfully updated"
